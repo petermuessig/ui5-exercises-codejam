@@ -2,13 +2,16 @@ specVersion: '2.6'
 metadata:
   name: bookshop-approuter
 type: application
+resources:
+    configuration:
+        paths:
+            webapp: webapp
 framework:
   name: OpenUI5
   version: "1.104.0"
   libraries:
     - name: sap.m
     - name: sap.ui.core
-    - name: sap.ui.unified
     - name: themelib_sap_horizon
 server:
   customMiddleware:

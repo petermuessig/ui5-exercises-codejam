@@ -2,6 +2,11 @@
     "sap.app": {
         "id": "codejam",
         "type": "application",
+        "i18n": {
+			"bundleUrl": "i18n/i18n.properties",
+			"supportedLocales": ["en", "de"],
+			"fallbackLocale": "en"
+		},
         "title": "CodeJam Bookshop",
         "applicationVersion": {
             "version": "1.0.0"
@@ -14,10 +19,18 @@
         }
     },
     "sap.ui5": {
+        "dependencies": {
+            "minUI5Version": "1.70.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {}
+            }
+        },
         "rootView": {
             "viewName": "sap.codejam.view.App",
             "type": "XML",
-            "id": "app"
+            "id": "app",
+            "async": true
         },
         "models": {
             "": {
@@ -26,7 +39,9 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "sap.codejam.i18n.i18n"
+                    "bundleName": "sap.codejam.i18n.i18n",
+                    "supportedLocales": ["en", "de"],
+					"fallbackLocale": "en"
                 }
             }
         },

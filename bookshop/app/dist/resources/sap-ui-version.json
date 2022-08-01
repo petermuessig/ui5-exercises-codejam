@@ -1,0 +1,32 @@
+{
+	"name": "bookshop-approuter",
+	"version": "",
+	"buildTimestamp": "202208011339",
+	"scmRevision": "",
+	"libraries": [
+		{
+			"name": "sap.m",
+			"version": "1.104.0",
+			"buildTimestamp": "202208011339",
+			"scmRevision": ""
+		},
+		{
+			"name": "sap.ui.core",
+			"version": "1.104.0",
+			"buildTimestamp": "202208011339",
+			"scmRevision": ""
+		},
+		{
+			"name": "sap.ui.layout",
+			"version": "1.104.0",
+			"buildTimestamp": "202208011339",
+			"scmRevision": ""
+		},
+		{
+			"name": "sap.ui.unified",
+			"version": "1.104.0",
+			"buildTimestamp": "202208011339",
+			"scmRevision": ""
+		}
+	]
+}

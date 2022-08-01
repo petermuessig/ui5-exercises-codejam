@@ -1,0 +1,31 @@
+specVersion: '2.6'
+metadata:
+  name: bookshop-approuter
+type: application
+framework:
+  name: OpenUI5
+  version: "1.104.0"
+  libraries:
+    - name: sap.m
+    - name: sap.ui.core
+    - name: sap.ui.unified
+    - name: themelib_sap_horizon
+server:
+  customMiddleware:
+  - name: ui5-middleware-livereload
+    afterMiddleware: compression
+    configuration:
+      debug: true
+      extraExts: "xml,json,properties"
+      port: 35729
+      path: "webapp"
+  - name: ui5-middleware-cfdestination
+    afterMiddleware: compression
+    configuration:
+      authenticationMethod: "none"
+      debug: true
+      port: 1091
+      xsappJson: "xs-app.json"
+      destinations:
+        - name: "browse-bookshop"
+          url: "http://localhost:4004"

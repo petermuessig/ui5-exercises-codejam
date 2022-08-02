@@ -33,7 +33,6 @@ bookshop/mta.yaml
 bookshop/xs-security.json
 
 bookshop/app/mta.yaml
-bookshop/app/package.json
 bookshop/app/package-lock.json
 bookshop/app/remote-destination.json
-bookshop/app/xs-app.json
+bookshop/app/dist/

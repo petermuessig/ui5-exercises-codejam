@@ -1,0 +1,24 @@
+{
+    "name": "bookshop-approuter",
+    "dependencies": {
+        "@sap/approuter": "^10"
+    },
+    "scripts": {
+        "dev": "ui5 serve --open index.html",
+        "dev:dist": "ui5 serve --config ui5-dist.yaml --open index.html",
+        "build:ui": "ui5 build self-contained --dest ./dist",
+        "start": "node node_modules/@sap/approuter/approuter.js",
+        "build": "mbt build"
+    },
+    "devDependencies": {
+        "mbt": "^1.2.7",
+        "ui5-middleware-cfdestination": "^0.9.1",
+        "ui5-middleware-livereload": "^0.5.8"
+    },
+    "ui5": {
+        "dependencies": [
+            "ui5-middleware-livereload",
+            "ui5-middleware-cfdestination"
+        ]
+    }
+}

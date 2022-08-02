@@ -1,1 +1,0 @@
-sap.ui.define(["sap/ui/core/UIComponent","sap/ui/core/date/Gregorian","sap/ui/core/ComponentSupport"],function(e){"use strict";return e.extend("sap.codejam.Component",{metadata:{interfaces:["sap.ui.core.IAsyncContentCreation"],manifest:"json"},init:function(){e.prototype.init.apply(this,arguments)}})});

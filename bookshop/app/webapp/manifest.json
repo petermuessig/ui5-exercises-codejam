@@ -1,6 +1,6 @@
 {
     "sap.app": {
-        "id": "codejam",
+        "id": "sap.codejam",
         "type": "application",
         "i18n": {
 			"bundleUrl": "i18n/i18n.properties",

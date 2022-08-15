@@ -12,6 +12,9 @@ sap.ui.define([
                 selectedQuantity: 1
             }), "userSelection")
         },
+        onAfterRendering: function() {
+            document.body.classList.remove("loading");
+        },
         onSelect: function (oEvent) {
             let oModel = this.getView().getModel("userSelection")
             let selectedModelPath = oEvent.getSource().getBindingContext().sPath

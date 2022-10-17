@@ -17,6 +17,9 @@ sap.ui.define([
                     this,
                     arguments
                     )
+            },
+            onAfterRendering: function() {
+                document.body.classList.remove("loading");
             }
         })
     })

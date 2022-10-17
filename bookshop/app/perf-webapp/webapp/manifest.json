@@ -19,6 +19,13 @@
             "type": "XML",
             "id": "app"
         },
+        "dependencies": {
+            "minUI5Version": "1.107.1",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {}
+            }
+        },
         "models": {
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
@@ -26,13 +33,6 @@
                     "bundleName": "sap.codejam.i18n.i18n"
                 }
             }
-        },
-        "resources": {
-            "css": [
-                {
-                    "uri": "css/style.css"
-                }
-            ]
         }
     }
 }

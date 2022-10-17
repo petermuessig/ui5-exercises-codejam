@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "ui5 build --all",
+    "build:sc": "ui5 build self-contained --all",
     "start": "ui5 serve",
     "start:dist": "serve dist"
   },

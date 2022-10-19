@@ -1,6 +1,6 @@
 specVersion: '2.6'
 metadata:
-  name: perf-webapp
+  name: sap.codejam
 type: application
 framework:
   name: OpenUI5
